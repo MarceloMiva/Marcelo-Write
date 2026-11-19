@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#050714" />
-  <meta name="description" content="Marcelo Write — thoughtful tools for clearer, more natural writing and reliable citations." />
-  <title>Marcelo Write — Write with clarity</title>
+  <meta name="description" content="AskSimi — thoughtful tools for clearer, more natural writing and reliable citations." />
+  <title>AskSimi — Write with clarity</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -15,13 +15,24 @@
   <script defer src="https://cdn.jsdelivr.net/npm/tesseract.js@6/dist/tesseract.min.js"></script>
 </head>
 <body>
-  <div id="intro" aria-hidden="true"><div class="intro-mark"><svg viewBox="0 0 100 100"><defs><linearGradient id="introGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0DFFE0"/><stop offset="1" stop-color="#7B5EA7"/></linearGradient></defs><rect x="7" y="7" width="86" height="86" rx="25"/><path d="M27 70V30l23 26 23-26v40"/></svg></div><div class="intro-word">Marcelo Write<span class="cursor">|</span></div><div class="intro-seam"></div></div>
+  <div id="intro" aria-hidden="true">
+    <div class="intro-stars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="intro-orbit intro-orbit-one"></div><div class="intro-orbit intro-orbit-two"></div>
+    <div class="intro-content">
+      <div class="intro-logo-wrap"><svg class="intro-logo" viewBox="0 0 120 120" role="img" aria-label="AskSimi"><defs><linearGradient id="askLogoGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#12F2E0"/><stop offset=".55" stop-color="#438DFF"/><stop offset="1" stop-color="#B35BFA"/></linearGradient></defs><path d="M25 91 55 22q5-11 11 0l29 69H73L61 58 47 91Z" fill="url(#askLogoGrad)"/><path d="M14 65c17-25 69-41 91-17 12 14-1 31-17 37" fill="none" stroke="url(#askLogoGrad)" stroke-width="5" stroke-linecap="round"/><path d="m94 17 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#B9FFF7"/></svg></div>
+      <div class="intro-title">Ask<span>Simi</span></div>
+      <p class="intro-tagline">WRITE <b>•</b> RESEARCH <b>•</b> CITE <b>•</b> HUMANIZE</p>
+      <div class="intro-features"><span>✎ Humanizer</span><span>⌕ Research</span><span>▤ Citations</span><span>✧ Multi-AI</span></div>
+      <div class="intro-caption">Your all-in-one AI writing &amp; research companion</div>
+      <div class="intro-progress"><i></i></div>
+    </div>
+  </div>
   <header class="topbar">
-    <a class="brand" href="#/home" aria-label="Marcelo Write home"><span class="mw">MW</span><span>Marcelo <b>Write</b></span></a>
+    <a class="brand" href="#/home" aria-label="AskSimi home"><span class="mw asksimi-mark">A</span><span>Ask<span class="brand-accent">Simi</span></span></a>
     <nav class="desktop-nav"><a href="#/humanizer">Humanizer</a><a href="#/rewriter">Rewriter</a><a href="#/citation">Citations</a><a href="#/pricing">Pricing</a></nav>
     <button class="menu-trigger" id="menuOpen" aria-label="Open navigation"><i></i><i></i><i></i></button>
   </header>
-  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"><div class="menu-head"><a class="brand" href="#/home"><span class="mw">MW</span><span>Marcelo <b>Write</b></span></a><button class="icon-btn" id="menuClose" aria-label="Close menu">✕</button></div>
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"><div class="menu-head"><a class="brand" href="#/home"><span class="mw asksimi-mark">A</span><span>Ask<span class="brand-accent">Simi</span></span></a><button class="icon-btn" id="menuClose" aria-label="Close menu">✕</button></div>
     <div class="menu-content">
       <details open><summary>Products</summary><a href="#/humanizer">Humanizer</a></details>
       <details open><summary>Tools</summary><a href="#/rewriter">Rewriter</a><a href="#/paraphraser">Paraphraser</a><a href="#/citation">Citation Generator</a><a href="#/references">Reference Generator</a></details>
@@ -29,8 +40,8 @@
     </div><p class="menu-foot">Rewrite your own work and follow your school's AI policy.</p>
   </div>
   <main id="app" tabindex="-1"></main>
-  <footer class="footer"><div class="brand"><span class="mw">MW</span><span>Marcelo <b>Write</b></span></div><p>Write clearly. Think independently.</p><small>Rewrite your own work and follow your school's AI policy.</small><div class="footer-bottom">© <span id="year"></span> Marcelo Write</div></footer>
+  <footer class="footer"><div class="brand"><span class="mw asksimi-mark">A</span><span>Ask<span class="brand-accent">Simi</span></span></div><p>Write clearly. Think independently.</p><small>Rewrite your own work and follow your school's AI policy.</small><div class="footer-bottom">© <span id="year"></span> AskSimi</div></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <div class="sheet-backdrop" id="upgradeSheet"><section class="upgrade-sheet"><button class="icon-btn sheet-x" id="sheetClose" aria-label="Close">✕</button><div class="sheet-icon">✦</div><h2>You've used your free rewrite</h2><p>Thanks for trying Marcelo Write. Explore upcoming plans for longer drafts, Quality mode, history and more.</p><a class="btn primary" href="#/pricing">Explore pricing <span>→</span></a><p class="tiny-note">Citations remain free to use.</p></section></div>
+  <div class="sheet-backdrop" id="upgradeSheet"><section class="upgrade-sheet"><button class="icon-btn sheet-x" id="sheetClose" aria-label="Close">✕</button><div class="sheet-icon">✦</div><h2>You've used your free rewrite</h2><p>Thanks for trying AskSimi. Explore upcoming plans for longer drafts, Quality mode, history and more.</p><a class="btn primary" href="#/pricing">Explore pricing <span>→</span></a><p class="tiny-note">Citations remain free to use.</p></section></div>
   <script type="module" src="/app.js"></script>
 </body></html>
